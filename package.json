@@ -150,9 +150,9 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "copy:html": "cpy ./*.html ./build/",
+    "copy:html": "cpy ./src/*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "build": "concurrently npm:copy:*",
+    "build": " concurrently npm:copy:*",
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
