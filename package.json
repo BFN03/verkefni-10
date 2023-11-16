@@ -150,13 +150,13 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "build-css":"tailwindcss build src/input.css -o dist/output.css",
-    "copy:img": "cpy ./src/img/*.jpg ./build/",
-    "1copy:css": "cpy ./dist/*.css ./build/",
-    "copy:css": "cpy ./src/*.css ./build/",
-    "copy:html": "cpy ./src/*.html ./build/",
+   "build-css": "tailwind build src/input.css -o dist/output.css ",
+   "copy:img": "cpy ./src/img/*.jpg ./build/",
+   "copy:css": "cpy ./src/*.css ./build/",
+   "copy:html": "cpy ./src/*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "build": " tailwindcss build src/input.css -o dist/output.css concurrently npm:copy:*"
+    "build": "npm run build-css && npm run copy:img & npm run copy:css & npm run copy:html & npm run copy:js"
+
   },
   "keywords": [],
   "author": "",
