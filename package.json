@@ -152,6 +152,7 @@
   "scripts": {
     "build-css":"tailwindcss build src/input.css -o dist/output.css",
     "copy:img": "cpy ./src/img/*.jpg ./build/",
+    "1copy:css": "cpy ./dist/*.css ./build/",
     "copy:css": "cpy ./src/*.css ./build/",
     "copy:html": "cpy ./src/*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
